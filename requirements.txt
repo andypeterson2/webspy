@@ -1,0 +1,13 @@
+# Requirements for checking websites for links and sending email notifications
+yagmail==0.14.260 # For sending emails with OAuth credentials
+beautifulsoup4==4.10.0 # For parsing HTML content
+requests==2.26.0 # For getting website content
+
+# Requirements for standard Python modules
+os==0.1.1 # For interacting with the operating system
+sys==3.8 # For accessing system-specific parameters and functions
+signal==0.7 # For handling signals from the operating system
+re==2.2.1 # For regular expression matching
+logging==0.5.1.2 # For logging messages and results
+argparse==1.4.0 # For parsing command line arguments
+multiprocessing==0.70a1 # For running processes in parallel
