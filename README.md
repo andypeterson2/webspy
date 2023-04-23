@@ -63,11 +63,12 @@ The script will create a separate process for each configuration file and check 
 
 To stop the script, you can use Ctrl-C or send a SIGTERM signal to the main process.
 
+## Credits
+Made in part using [Microsoft Bing](https://www.bing.com/search?q=chat+mode) on Edge for iOS.
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-You're welcome. I can try to generate a GitHub issue report format to add to your readme file. Here is a possible format:
 
 ## How to report an issue
 
@@ -117,3 +118,5 @@ I expected the script to send an email notification with the subject "Found href
 ### Additional context
 
 I checked my Gmail settings and enabled less secure app access, but the issue still persists.
+
+
