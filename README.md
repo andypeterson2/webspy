@@ -20,7 +20,7 @@ cd WebSpy
 pip install -r requirements.txt
 ```
 
-You also need to create a file called credentials.json in the same directory as the script, and fill it with your Gmail username and OAuth2 token. You can follow this guide to obtain an OAuth2 token for Gmail: https://yagmail.readthedocs.io/en/latest/oauth2.html
+You also need to create a file called credentials.json in the same directory as the script, and fill it with your Gmail username and OAuth2 token. You can follow this guide to obtain an OAuth2 token for Gmail: https://yagmail.readthedocs.io/en/latest/setup.html#using-oauth2
 
 The credentials.json file should look like this:
 
