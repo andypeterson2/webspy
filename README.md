@@ -67,13 +67,53 @@ To stop the script, you can use Ctrl-C or send a SIGTERM signal to the main proc
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contact
+You're welcome. I can try to generate a GitHub issue report format to add to your readme file. Here is a possible format:
 
-If you have any questions or feedback, feel free to contact me at your_email@gmail.com.
+## How to report an issue
 
-Source: Conversation with Bing, 4/22/2023(1) How to create a Readme.md file? | Medium. https://bing.com/search?q=how+to+write+a+good+readme+for+python Accessed 4/22/2023.
-(2) How to Write a Good README File for Your GitHub Project - FreeCodecamp. https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/ Accessed 4/22/2023.
-(3) Writing good README files — Code documentation documentation. https://coderefinery.github.io/documentation/writing-readme-files/ Accessed 4/22/2023.
-(4) How to create a Readme.md file? | Medium. https://medium.com/@danielmihai0220/creating-a-readme-md-file-88e0f3791d3d Accessed 4/22/2023.
-(5) Make a README & Documentation with Jupyter Notebooks. https://jackmckew.dev/make-a-readme-documentation-with-jupyter-notebooks.html Accessed 4/22/2023.
-(6) Making a PyPI-friendly README — Python Packaging User Guide. https://packaging.python.org/guides/making-a-pypi-friendly-readme/ Accessed 4/22/2023.
+If you encounter a bug or have a feature request for WebSpy, please open an issue on GitHub using the following template:
+
+### Issue title
+
+A concise and descriptive title that summarizes the issue.
+
+### Issue description
+
+A clear and detailed explanation of what the problem or feature request is. Include any relevant information such as steps to reproduce, expected behavior, actual behavior, screenshots, logs, etc.
+
+### Environment
+
+A description of the environment where the issue occurs, such as the operating system, Python version, dependencies versions, etc.
+
+### Additional context
+
+Any other information that may be helpful to understand or resolve the issue.
+
+Here is an example of an issue report:
+
+### Issue title
+
+WebSpy fails to send email notification when matching link is found
+
+### Issue description
+
+I ran WebSpy with a configuration file that checks https://www.python.org/ for links with the term "python". The script found a matching link but did not send an email notification to the recipient. Instead, it raised an SMTPAuthenticationError and logged the following message:
+
+```bash
+ERROR:root:Failed to send email notification: (534, b'5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbs\n5.7.14 0Q8LwBkxZjYf0z9tZl8tXG9pZy3J6yHn6wFm8RvLs2bQ2jKoqWd3q1vYX4a0a7VxOQc2rP\n5.7.14 9fFzWfJm4iXlUcCgMk4e1wKjyM0nYHh6bN4OuOZQYV9DxqJL0i3oT3uqUjgEzRf6lGpH0P\n5.7.14 2sJnBmTbWgIy1d8aUeCpGkMnU6oXw> Please log in via your web browser and\n5.7.14 then try again.\n5.7.14  Learn more at\n5.7.14  https://support.google.com/mail/answer/78754 f10sm10142343wmg.13 - gsmtp')
+```
+
+I expected the script to send an email notification with the subject "Found href with partial title match" and the body containing the URL of the matching link.
+
+### Environment
+
+- Operating system: Windows 10
+- Python version: 3.9.1
+- BeautifulSoup version: 4.9.3
+- Requests version: 2.25.1
+- Yagmail version: 0.14.245
+- OAuth2 credentials for Gmail: valid and working
+
+### Additional context
+
+I checked my Gmail settings and enabled less secure app access, but the issue still persists.
